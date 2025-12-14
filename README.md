@@ -493,6 +493,32 @@ python -c "import gymnasium, torch, pygame; print('All packages installed succes
 
 ---
 
+## 🐳 Docker (optional)
+
+You can build a Docker image that contains the project and its Python dependencies. This is useful for reproducible demos and a professional, shareable environment.
+
+Build the image (from repository root):
+```bash
+docker build -t shariqquest:latest .
+```
+
+Run an interactive container (inspect, run training, or launch a notebook):
+```bash
+# Start a shell inside the container
+docker run --rm -it -v "$PWD":/app -w /app shariqquest:latest bash
+
+# Example: run Q-Learning training
+python 2-q-learning-agent/main.py
+
+# Example: run the tutorial (headless mode; rendering disabled)
+python -c "import os; os.environ['DISPLAY']=''; from tutorial import ..." || echo 'Run notebooks locally via Jupyter or open the container shell to run scripts.'
+```
+
+Notes:
+- The `Dockerfile` installs system libraries that help `pygame` render. For notebook-based visualization prefer running Jupyter locally with GUI support.
+- If you only need training (no rendering), set `render=False` in the relevant `main.py` scripts before running inside the container.
+
+
 ## 🎮 Usage
 
 ### Quick Start Guide

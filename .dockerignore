@@ -1,0 +1,16 @@
+venv/
+env/
+.venv/
+__pycache__/
+.git
+.gitignore
+.vscode/
+*.pyc
+*.pyo
+.ipynb_checkpoints
+*.egg-info
+dist/
+build/
+data/
+*.mp4
+*.avi
