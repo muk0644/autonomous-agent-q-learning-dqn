@@ -1,0 +1,12 @@
+{
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/1-custom-environment",
+        "${workspaceFolder}/2-q-learning-agent",
+        "${workspaceFolder}/3-dqn-agent"
+    ],
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/1-custom-environment",
+        "${workspaceFolder}/2-q-learning-agent",
+        "${workspaceFolder}/3-dqn-agent"
+    ]
+}
