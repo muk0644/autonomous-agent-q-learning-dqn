@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Training outputs - KEEP ALL (files are small enough for GitHub)
+# q_table.npy - Trained Q-table
+# dqn.pth - Trained DQN model weights
+
+# Result visualizations - KEEP THESE for README documentation
+# All .png files in project folders show experiment results
+# - training_curve.png (DQN learning curve)
+# - Qtable_*.png (Q-Learning heatmaps)
+# - environment*.png (Environment visualizations)
+
+# Documentation files to keep
+!*.png
+!*.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large files or temporary outputs
+*.mp4
+*.avi
+
+# Logs
+*.log
