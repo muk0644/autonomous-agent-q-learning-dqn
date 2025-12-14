@@ -72,6 +72,7 @@ autonomous-agent-q-learning-dqn/
 │   ├── dqn.pth                        # Trained model weights (PyTorch)
 │   └── training_curve.png             # Learning curve visualization
 │
+├── tutorial.ipynb                     # Interactive Jupyter tutorial (Q-Learning & DQN walkthrough)
 ├── requirements.txt                   # Python dependencies
 ├── LICENSE                            # MIT License
 └── README.md                          # This file
