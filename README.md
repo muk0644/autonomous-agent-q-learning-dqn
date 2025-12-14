@@ -493,6 +493,21 @@ python -c "import gymnasium, torch, pygame; print('All packages installed succes
 
 ---
 
+## 🛠 Development
+
+If you use **VS Code**, the repository includes workspace settings to help the editor and Pylance resolve project modules automatically. Recommended extensions:
+
+- **Python** (ms-python.python)
+- **Pylance** (ms-python.vscode-pylance)
+- **Jupyter** (ms-toolsai.jupyter) — for working with `tutorial.ipynb`
+- **Python linter** (e.g., Pylint or Flake8)
+- **Remote - Containers** (ms-vscode-remote.remote-containers) — optional for Docker workflows
+
+Notes:
+- The file `.vscode/settings.json` is intentionally included to add `python.analysis.extraPaths` so `padm_env` and other local modules are discovered by Pylance. This is safe to keep and helps contributors open the project without extra setup.
+- Open the repository in VS Code, select the Python interpreter for your virtual environment (`venv`), and install the recommended extensions for the best developer experience.
+
+
 ## 🐳 Docker (optional)
 
 You can build a Docker image that contains the project and its Python dependencies. This is useful for reproducible demos and a professional, shareable environment.
