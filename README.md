@@ -1,4 +1,4 @@
-# ShariqQuest: Autonomous Agent Training using Q-Learning & DQN
+# Autonomous Agent Training using Q-Learning & DQN
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.3.0-red.svg)](https://pytorch.org/)
